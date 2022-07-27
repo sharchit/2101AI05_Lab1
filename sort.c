@@ -14,7 +14,8 @@ void insertionSort(int array[], int size) {
     {
         int key = array[step];
         int j = step - 1;
-        while (key < array[j] && j >= 0) {
+        while (key < array[j] && j >= 0)
+        {
             array[j + 1] = array[j];
             --j;
         }
@@ -45,7 +46,8 @@ void selectionSort(int array[], int size) {
 void bubbleSort(int array[], int size)
 {
     for (int step = 0; step < size - 1; ++step) {
-        for (int i = 0; i < size - step - 1; ++i) {
+        for (int i = 0; i < size - step - 1; ++i)
+        {
         if (array[i] > array[i + 1])
             {
                 int temp = array[i];
@@ -111,6 +113,30 @@ void mergeSort(int arr[], int l, int r) {
     }
 }
 
+int partition(int array[], int low, int high) {
+    int pivot = array[high];
+    int i = (low - 1);
+    for (int j = low; j < high; j++) {
+        if (array[j] <= pivot)
+        {
+            i++;
+            swap(&array[i], &array[j]);
+        }
+    }
+    swap(&array[i + 1], &array[high]);
+    return (i + 1);
+}
+
+void quickSort(int array[], int low, int high)
+{
+    if (low < high)
+    {
+        int pi = partition(array, low, high);
+        quickSort(array, low, pi - 1);
+        quickSort(array, pi + 1, high);
+    }
+}
+
 int main() 
 {
     int n;
@@ -155,6 +181,12 @@ int main()
     {
         mergeSort(arr, 0, n - 1);
         printf("The array after Merge sort is: ");
+        printArray(arr, n);
+    }
+    else if(key == 5)
+    {
+        quickSort(arr, 0, n - 1);
+        printf("The array after Quick sort is: ");
         printArray(arr, n);
     }
     else

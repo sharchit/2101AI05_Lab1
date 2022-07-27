@@ -1,4 +1,6 @@
-#Archit Sharma (2101AI05) Software Lab CS230
+#Archit Sharma (2101AI05) 
+##Software Lab CS230
+
 Hi All
 
 For tomo lab, you need to complete this playlist @ hostel only. No need to goto CC as you will need to install Git on your laptop

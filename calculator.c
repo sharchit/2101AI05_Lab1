@@ -34,6 +34,15 @@ int main()
             scanf("%f", &y);
             printf("The difference is %f\n", x-y);
         }
+
+        else if(key == 3)
+        {
+            float x, y;
+            printf("Enter the two numbers: ");
+            scanf("%f", &x);
+            scanf("%f", &y);
+            printf("The product is %f\n", x*y);
+        }
     }
     
 }

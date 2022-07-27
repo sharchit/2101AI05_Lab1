@@ -26,6 +26,14 @@ int main()
             scanf("%f", &y);
             printf("The sum is %f\n", x+y);
         }
+        else if(key == 2)
+        {
+            float x, y;
+            printf("Enter the two numbers (mind the order): ");
+            scanf("%f", &x);
+            scanf("%f", &y);
+            printf("The difference is %f\n", x-y);
+        }
     }
     
 }

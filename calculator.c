@@ -43,6 +43,14 @@ int main()
             scanf("%f", &y);
             printf("The product is %f\n", x*y);
         }
+        else if(key == 4)
+        {
+            float x, y;
+            printf("Enter the two numbers (mind the order): ");
+            scanf("%f", &x);
+            scanf("%f", &y);
+            printf("The product is %f\n", x/y);
+        }
     }
     
 }

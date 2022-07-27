@@ -43,6 +43,7 @@ int main()
             scanf("%f", &y);
             printf("The product is %f\n", x*y);
         }
+
         else if(key == 4)
         {
             float x, y;
@@ -50,6 +51,15 @@ int main()
             scanf("%f", &x);
             scanf("%f", &y);
             printf("The product is %f\n", x/y);
+        }
+
+        else if(key == 5)
+        {
+            float x, y;
+            printf("Enter the base and power respectively: ");
+            scanf("%f", &x);
+            scanf("%f", &y);
+            printf("The product is %lf\n", pow(x, y));
         }
     }
     

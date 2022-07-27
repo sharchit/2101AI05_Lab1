@@ -61,6 +61,15 @@ int main()
             scanf("%f", &y);
             printf("The product is %lf\n", pow(x, y));
         }
+
+        else if(key == 6)
+        {
+            float x, y;
+            printf("Enter the base and number respectively: ");
+            scanf("%f", &x);
+            scanf("%f", &y);
+            printf("The product is %lf\n", log(y)/log(x));
+        }
     }
     
 }

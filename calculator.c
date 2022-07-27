@@ -70,6 +70,9 @@ int main()
             scanf("%f", &y);
             printf("The product is %lf\n", log(y)/log(x));
         }
+        
+        else if(key == 0)
+            return 0;
     }
     
 }
